@@ -1,54 +1,95 @@
-
 # EveryCalc
 
-EveryCalc is a Python command-line calculator project.
+EveryCalc is a Python command-line application that combines basic mathematical calculations with GPA and CGPA calculations in one easy-to-use program.
 
-## Project Goal
+## Features
 
-Build an easy-to-use application for mathematical calculations and GPA/CGPA calculations.
+### 1. Basic Calculator
+- Addition (+)
+- Subtraction (-)
+- Multiplication (*)
+- Division (/)
+- Percentage calculations (%)
+- Power calculations (^)
+- Square-root calculations (sqrt)
+- Input validation and error handling
+- Protection against division by zero
 
-## Features Implemented
+### 2. GPA Calculator
+- Calculate semester GPA using course grade points and credit hours.
+- Support multiple courses in one semester.
+- Validate grade points and credit hours.
+- Display the final GPA rounded to two decimal places.
 
-- Command-line menu
-- Addition, subtraction, multiplication, and division
-- Percentage calculations
-- Power calculations
-- Square-root calculations
-- Input validation and calculation error handling
-- Semester GPA calculation using grade points and credit hours
-- Cumulative CGPA calculation across semesters
-- Automated tests for calculator operations
-- 
-## Development Progress
-
-- [x] Create the local project directory.
-- [x] Initialize the local Git repository.
-- [x] Create the GitHub repository.
-- [x] Build the basic calculator.
-- [x] Test basic calculator operations.
-- [x] Implement GPA calculation.
-- [x] Implement CGPA calculation.
-- [x] Connect calculators to the main menu.
-- [x] Test GPA/CGPA calculations.
-- [ ] Connect to GitHub and push the completed project.
-
-## How to Run
-
-Run the application using:
-
-```bash
-uv run main.py
-```
+### 3. CGPA Calculator
+- Calculate cumulative GPA across multiple semesters.
+- Enter each semester's GPA and total credit hours.
+- Calculate a credit-hour-weighted CGPA.
+- Validate semester GPAs and credit hours.
 
 ## Technologies
 
 - Python
 - Git
 - GitHub
+- uv
+
+## Requirements
+
+- Python 3
+- uv (Python project and tool manager)
+
+## How to Run
+
+Clone the repository or download the project files.
+
+Run EveryCalc from the project directory:
+
+```bash
+uv run main.py
+```
+
+Follow the menu and select the calculator you want to use.
 
 ## Running Tests
 
-Run all automated tests using:
+Run all automated tests with:
 
 ```bash
 uv run python -m unittest discover -s tests -v
+```
+
+## Project Structure
+
+```text
+EveryCalc/
+├── main.py
+├── basic_calculator.py
+├── gpa_calculator.py
+├── README.md
+├── .gitignore
+└── tests/
+    ├── test_basic_calculator.py
+    └── test_gpa_calculator.py
+```
+
+## GPA Formula
+
+GPA is calculated using credit-hour weighting:
+
+GPA = Sum of (Grade Points × Credit Hours) / Total Credit Hours
+
+## CGPA Formula
+
+CGPA is calculated by weighting each semester GPA by that semester's total credit hours:
+
+CGPA = Sum of (Semester GPA × Semester Credit Hours) / Total Credit Hours Across Semesters
+
+The calculator uses a 4.0 grade-point scale. Confirm your university's grading rules for official academic results.
+
+## Development Goals
+
+- Practice Python functions and modular programming.
+- Improve input validation and error handling.
+- Write and run automated tests.
+- Learn Git version control and GitHub collaboration workflows.
