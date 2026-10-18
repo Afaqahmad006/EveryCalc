@@ -7,7 +7,7 @@ def run_basic_calculator():
 
     try:
         first_number = float(input("Enter first number: "))
-        operator = input("Choose operation (+, -, *, /): ").strip()
+        operator = input("Choose operation (+, -, *, /, %, ^): ").strip()
         second_number = float(input("Enter second number: "))
 
         result = calculate(first_number, operator, second_number)
