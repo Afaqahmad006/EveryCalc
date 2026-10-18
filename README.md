@@ -15,16 +15,18 @@ Build an easy-to-use application for mathematical calculations and GPA/CGPA calc
 - Power calculations
 - Square-root calculations
 - Input validation and calculation error handling
+- Automated tests for basic calculator operations
+- 
 ## Development Progress
 
 - [x] Create the local project directory.
 - [x] Initialize the local Git repository.
 - [x] Create the GitHub repository.
-- [x] Build the initial calculator menu.
-- [x] Implement basic arithmetic operations.
-- [x] Add percentages, powers, and square roots.
-- [x] Complete V1 testing.
-- [ ] Build the GPA/CGPA calculator (V3).
+- [x] Build the basic calculator.
+- [x] Test basic calculator operations.
+- [ ] Build the GPA/CGPA calculator.
+- [ ] Test GPA/CGPA calculations.
+- [ ] Connect to GitHub and push the completed project.
 
 ## How to Run
 
@@ -39,4 +41,3 @@ uv run main.py
 - Python
 - Git
 - GitHub
-
