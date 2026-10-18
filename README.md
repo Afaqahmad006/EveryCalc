@@ -11,9 +11,10 @@ Build an easy-to-use application for mathematical calculations and GPA/CGPA calc
 
 - Command-line menu
 - Addition, subtraction, multiplication, and division
-- Basic input error handling
-- Division-by-zero protection
-
+- Percentage calculations
+- Power calculations
+- Square-root calculations
+- Input validation and calculation error handling
 ## Development Progress
 
 - [x] Create the local project directory.
@@ -21,7 +22,7 @@ Build an easy-to-use application for mathematical calculations and GPA/CGPA calc
 - [x] Create the GitHub repository.
 - [x] Build the initial calculator menu.
 - [x] Implement basic arithmetic operations.
-- [ ] Add percentages, powers, and square roots.
+- [x] Add percentages, powers, and square roots.
 - [ ] Complete V1 testing.
 - [ ] Build the GPA/CGPA calculator (V3).
 

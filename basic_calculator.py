@@ -1,4 +1,15 @@
-def calculate(first_number, operator, second_number):
+import math
+
+
+def calculate(first_number, operator, second_number=None):
+    if operator == "sqrt":
+        if first_number < 0:
+            raise ValueError("Cannot calculate the square root of a negative number.")
+        return math.sqrt(first_number)
+
+    if second_number is None:
+        raise ValueError("This operation requires a second number.")
+
     if operator == "+":
         return first_number + second_number
 

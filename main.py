@@ -5,16 +5,25 @@ from basic_calculator import calculate
 def run_basic_calculator():
     print("\n--- Basic Calculator ---")
 
-    try:
-        first_number = float(input("Enter first number: "))
-        operator = input("Choose operation (+, -, *, /, %, ^): ").strip()
-        second_number = float(input("Enter second number: "))
+    operator = input(
+        "Choose operation (+, -, *, /, %, ^, sqrt): "
+    ).strip().lower()
 
-        result = calculate(first_number, operator, second_number)
+    try:
+        if operator == "sqrt":
+            first_number = float(input("Enter number: "))
+            result = calculate(first_number, operator)
+        else:
+            first_number = float(input("Enter first number: "))
+            second_number = float(input("Enter second number: "))
+            result = calculate(first_number, operator, second_number)
+
         print(f"Result: {result:g}")
 
     except ValueError as error:
         print(f"Error: {error}")
+    except OverflowError:
+        print("Error: The result is too large to calculate.")
 
 
 def main():
