@@ -1,5 +1,6 @@
 
 from basic_calculator import calculate
+from gpa_calculator import calculate_gpa
 
 
 def run_basic_calculator():
@@ -26,23 +27,63 @@ def run_basic_calculator():
         print("Error: The result is too large to calculate.")
 
 
+def run_gpa_calculator():
+    print("\n--- GPA Calculator ---")
+
+    try:
+        number_of_courses = int(input("How many courses? "))
+
+        if number_of_courses <= 0:
+            print("Error: Enter at least one course.")
+            return
+
+        courses = []
+
+        for number in range(1, number_of_courses + 1):
+            print(f"\nCourse {number}")
+
+            course_name = input("Course name: ").strip()
+
+            if not course_name:
+                course_name = f"Course {number}"
+
+            grade_points = float(
+                input(f"Grade points for {course_name} (0-4): ")
+            )
+
+            credit_hours = float(
+                input(f"Credit hours for {course_name}: ")
+            )
+
+            courses.append((grade_points, credit_hours))
+
+        gpa = calculate_gpa(courses)
+
+        print(f"\nSemester GPA: {gpa:.2f}")
+
+    except ValueError as error:
+        print(f"Error: {error}")
+
+
 def main():
     while True:
         print("\n===== EveryCalc =====")
         print("1. Basic Calculator")
-        print("2. Exit")
+        print("2. GPA Calculator")
+        print("3. Exit")
 
         choice = input("Choose an option: ").strip()
 
         if choice == "1":
             run_basic_calculator()
         elif choice == "2":
+            run_gpa_calculator()
+        elif choice == "3":
             print("Goodbye!")
             break
         else:
-            print("Invalid option. Please choose 1 or 2.")
+            print("Invalid option. Please choose 1, 2, or 3.")
 
 
 if __name__ == "__main__":
     main()
-
