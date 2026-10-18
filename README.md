@@ -23,7 +23,7 @@ Build an easy-to-use application for mathematical calculations and GPA/CGPA calc
 - [x] Build the initial calculator menu.
 - [x] Implement basic arithmetic operations.
 - [x] Add percentages, powers, and square roots.
-- [ ] Complete V1 testing.
+- [x] Complete V1 testing.
 - [ ] Build the GPA/CGPA calculator (V3).
 
 ## How to Run
