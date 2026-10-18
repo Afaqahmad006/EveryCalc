@@ -24,10 +24,11 @@ Build an easy-to-use application for mathematical calculations and GPA/CGPA calc
 - [x] Create the GitHub repository.
 - [x] Build the basic calculator.
 - [x] Test basic calculator operations.
-- [x] Implement the credit-weighted GPA calculation function.
-- [ ] Add GPA input through the main menu.
-- [ ] Implement CGPA calculation across semesters.
-- [ ] Test GPA/CGPA calculations.
+- [x] Implement GPA calculation logic.
+- [x] Connect GPA calculation to the main menu.
+- [ ] Implement CGPA across multiple semesters.
+- [ ] Test GPA and CGPA calculations.
+- [ ] Connect to GitHub and push the completed project.
 
 ## How to Run
 
